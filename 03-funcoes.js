@@ -38,16 +38,21 @@ separador();
 numéricos como parâmetros, calcule a diferença entre estes valores
 e retorne o resultado calculado. */
 function calcularDiferenca( valor1, valor2 ){
-    // let diferenca = valor1 - valor2;
-    // return diferenca;
-    return valor1 - valor2;
+    let diferenca = valor1 - valor2;
+    return diferenca;
+    // return valor1 - valor2;
 }
-
-
-
 
 /* 2) Chame esta função pelo menos duas vezes passando valores diferentes
 e guardando os resultados em variáveis de escopo global. */
+let resultado1 = calcularDiferenca(10, 125);
+let resultado2 = calcularDiferenca(1250.7, -12);
+
 
 /* 3) Apresente os resultados no console. */
+console.log(resultado1);
+console.log(resultado2);
+console.log( calcularDiferenca(100, 50) );
+
+
 
