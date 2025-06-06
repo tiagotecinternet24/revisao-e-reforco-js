@@ -37,6 +37,14 @@ separador();
 /* 1) Crie uma função (qualquer sintaxe) que receba dois valores
 numéricos como parâmetros, calcule a diferença entre estes valores
 e retorne o resultado calculado. */
+function calcularDiferenca( valor1, valor2 ){
+    // let diferenca = valor1 - valor2;
+    // return diferenca;
+    return valor1 - valor2;
+}
+
+
+
 
 /* 2) Chame esta função pelo menos duas vezes passando valores diferentes
 e guardando os resultados em variáveis de escopo global. */
