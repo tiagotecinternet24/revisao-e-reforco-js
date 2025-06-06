@@ -38,9 +38,7 @@ separador();
 numéricos como parâmetros, calcule a diferença entre estes valores
 e retorne o resultado calculado. */
 function calcularDiferenca( valor1, valor2 ){
-    let diferenca = valor1 - valor2;
-    return diferenca;
-    // return valor1 - valor2;
+    return valor1 - valor2;
 }
 
 /* 2) Chame esta função pelo menos duas vezes passando valores diferentes
@@ -85,4 +83,19 @@ console.log(calcularMetadeSintaxeCompleta(10));
 // Com retorno IMPLÍCITO
 const calcularMetade = valor => valor / 2;
 console.log(calcularMetade(10));
+
+separador();
+
+// Exercício de Refatoração
+
+/* 1) Reescreva a função do exercício anterior usando a sintaxe de arrow function */
+const calcularDiferenca_2 = (valor1, valor2) => valor1 - valor2;
+
+/* 2) Teste fazendo novas chamadas e novas saídas */
+let result = calcularDiferenca_2(7, 5);
+console.log(result);
+
+
+
+
 
