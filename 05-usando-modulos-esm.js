@@ -42,3 +42,15 @@ separador();
     - Formatar valor em moeda brasileira (real)
 3) Exporte-as como módulos
 4) No arquivo 05, importe e utilize estas funções passando textos e valores para testes. */
+
+import { 
+    converterMaiuscula, 
+    converterMinuscula, 
+    formatarMoeda 
+} from "./modulos-esm/funcoes.js";
+
+console.log(converterMaiuscula("tiago"));
+console.log(converterMinuscula("BELTRANO"));
+console.log(formatarMoeda(1000));
+
+
