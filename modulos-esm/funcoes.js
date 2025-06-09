@@ -4,11 +4,12 @@ export const converterMaiuscula = texto => texto.toUpperCase();
 
 export const converterMinuscula = texto => texto.toLowerCase();
 
-export const formatarMoeda = valor => {
+export const formatarMoeda = (valor, moeda = 'BRL', localidade = 'pt-BR' ) => {
     return valor.toLocaleString(
-        "pt-BR", {
+        localidade,
+        {
             style: "currency",
-            currency: "BRL"
+            currency: moeda
         }
     )
 };

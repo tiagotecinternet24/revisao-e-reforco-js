@@ -52,5 +52,7 @@ import {
 console.log(converterMaiuscula("tiago"));
 console.log(converterMinuscula("BELTRANO"));
 console.log(formatarMoeda(1000));
+console.log(formatarMoeda(2000, 'USD', 'en'));
+console.log(formatarMoeda(3000, 'EUR', 'fr'));
 
 
