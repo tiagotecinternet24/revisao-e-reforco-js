@@ -6,7 +6,7 @@ export const converterMinuscula = texto => texto.toLowerCase();
 
 export const formatarMoeda = valor => {
     return valor.toLocaleString(
-        "ptBR", {
+        "pt-BR", {
             style: "currency",
             currency: "BRL"
         }
