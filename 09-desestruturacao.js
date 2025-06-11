@@ -62,4 +62,14 @@ const diversos = [
 ];
 
 // Faça a desestruturação dos elementos deste array
+const [frase, [teclado, monitor, mouse], numero, converter] = diversos;
+
 // Teste usando o console.log para exibir cada elemento extraído
+console.log(frase);
+console.log(teclado);
+console.log(monitor);
+console.log(mouse);
+console.log(numero);
+console.log(converter("tiago"));
+
+//const [teclado, monitor, mouse] = perifericos;
