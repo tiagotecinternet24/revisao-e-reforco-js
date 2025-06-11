@@ -132,7 +132,7 @@ separador();
 /* Mini-exercícios */
 const paciente = {
   nome: "Gabriel Viana",
-  idade: 19,
+  idade: 5,
   contatos: ["gabriel@gmail.com", "11-98765-4321"],
   sintomas: "Sonolência permanente, coriza, tosse, bronquite...",
   mensalidade: 568.74,
@@ -145,4 +145,22 @@ const paciente = {
 };
 
 // Desestruture todos os elementos deste objeto paciente, tornando-os novas constantes
+const {
+  nome: nomeDoPaciente,
+  idade: idadeDoPaciente,
+  contatos: [email, telefone],
+  sintomas,
+  mensalidade,
+  endereco: { localidade, numero: numeroDoEndereco, bairro },
+  atendimento,
+} = paciente;
+
 // Use o console.log para testar o acesso a cada nova constante desestruturada
+console.log(nomeDoPaciente);
+console.log(idadeDoPaciente);
+console.log(email);
+console.log(telefone);
+console.log(localidade);
+console.log(numeroDoEndereco);
+console.log(bairro);
+console.log(atendimento());
