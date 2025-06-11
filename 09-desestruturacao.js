@@ -73,3 +73,20 @@ console.log(numero);
 console.log(converter("tiago"));
 
 //const [teclado, monitor, mouse] = perifericos;
+
+separador();
+
+const guloseimas = [
+  "brigadeiro",
+  "brownie",
+  "torta de limão",
+  "coxinha",
+  "pastel",
+  "pizza",
+  "esfiha",
+];
+
+// Desestruturação com operador rest
+const [brigadeiro, brownie, torta, ...salgados] = guloseimas;
+console.log(brigadeiro);
+console.log(salgados); // virou um array
