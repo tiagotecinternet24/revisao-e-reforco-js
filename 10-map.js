@@ -31,9 +31,9 @@ console.log(novoTextos);
 
 separador();
 
-console.log("== Lista Completa de Cursos ==");
-console.log(cursos);
-console.log("================================");
+// console.log("== Lista Completa de Cursos ==");
+// console.log(cursos);
+// console.log("================================");
 
 separador();
 
@@ -43,6 +43,12 @@ console.log(titulos);
 
 separador();
 
-/* Exercícios
+/* Exercício
 Use o map para gerar um novo array contendo SOMENTE os preços dos cursos
 calculados com um desconto de 10%. Mostre no console este novo array. */
+const precos = cursos.map((curso) => {
+  let resultado = curso.preco - curso.preco * 0.1;
+  return resultado;
+});
+
+console.log(precos);
