@@ -34,3 +34,37 @@ O operador spread é usado para espalhar os elementos de arrays ou objetos. Ele 
 ### Operador REST (...)
 
 O operador rest é usado para juntar vários valores em um array ou objeto. Ele coleta os "restantes" dos dados. Muito usado em funções para aceitar número variável de argumentos. Exemplo: function(...args). Ele agrupa os dados em uma nova estrutura.
+
+---
+
+## Sobre desestruturação
+
+A **desestruturação** em JavaScript é uma forma prática de **extrair valores de arrays ou propriedades de objetos** e atribuí-los diretamente a variáveis.
+
+### Para que serve?
+
+Ela **simplifica o código**, evitando a repetição e deixando a leitura mais clara.
+
+### Exemplos:
+
+#### 1. Desestruturação de array:
+
+```js
+const numeros = [10, 20, 30];
+const [a, b] = numeros;
+console.log(a); // 10
+console.log(b); // 20
+```
+
+#### 2. Desestruturação de objeto:
+
+```js
+const pessoa = { nome: "Ana", idade: 25 };
+const { nome, idade } = pessoa;
+console.log(nome); // Ana
+console.log(idade); // 25
+```
+
+### Resumo:
+
+A desestruturação serve para **pegar partes de um array ou objeto** e **armazenar em variáveis com menos código**. É muito útil com funções, parâmetros, APIs e estados em React.
