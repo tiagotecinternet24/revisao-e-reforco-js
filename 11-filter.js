@@ -34,9 +34,8 @@ const servicos = [
   { codigo: 5, tipo: "Instalação", status: "Concluído" },
 ];
 
-/* Faça como um exercício!  */
-const servicosPendentes = servicos.filter((servico) => {
-  return servico.status === "Pendente";
-});
+const servicosPendentes = servicos.filter(
+  ({ status }) => status === "Pendente"
+);
 
 console.log(servicosPendentes);
