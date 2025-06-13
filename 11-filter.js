@@ -39,3 +39,36 @@ const servicosPendentes = servicos.filter(
 );
 
 console.log(servicosPendentes);
+
+separador();
+
+// Exemplo 3
+const cursosDesign = cursos.filter((curso) => {
+  return curso.categoria === "Design";
+});
+
+console.log(cursosDesign);
+
+separador();
+
+// Exemplo 4
+const cursosExcetoDesign = cursos.filter(
+  (curso) => curso.categoria !== "Design"
+);
+console.log(cursosExcetoDesign);
+
+separador();
+
+/* Exercício
+Gere um novo array com os cursos que atendam os seguintes critérios:
+- Categoria Front-End OU Mobile
+- Preços acima de 600 */
+const exercicioCursos = cursos.filter((curso) => {
+  return (
+    (curso.categoria === "Front-End" || curso.categoria === "Mobile") &&
+    curso.preco > 600
+  );
+});
+
+console.log("Quantidade de cursos do exercício: " + exercicioCursos.length);
+console.log(exercicioCursos);
