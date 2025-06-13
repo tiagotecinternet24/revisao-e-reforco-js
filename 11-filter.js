@@ -72,3 +72,9 @@ const exercicioCursos = cursos.filter((curso) => {
 
 console.log("Quantidade de cursos do exercício: " + exercicioCursos.length);
 console.log(exercicioCursos);
+
+separador();
+
+/* 👿 Desafio ☠️ 
+Gerar um novo array com os cursos da categoria Back-End e COM O PREÇO atualizado
+com 10% de desconto. Para esta atividade você deverá combinar filter com map. */
