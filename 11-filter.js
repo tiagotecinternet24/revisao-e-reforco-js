@@ -11,9 +11,7 @@ retornar valores de acordo com uma ou mais condições, gerando um novo array. *
 const vendas = [1500, 3000, 500, 1000, 750, 5000, 100];
 const META = 1000;
 
-const vendasQueBateramMeta = vendas.filter((venda) => {
-  return venda >= META;
-});
+const vendasQueBateramMeta = vendas.filter((venda) => venda >= META);
 
 console.log(vendasQueBateramMeta);
 
