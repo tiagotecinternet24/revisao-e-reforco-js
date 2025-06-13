@@ -12,7 +12,6 @@ const vendas = [1500, 3000, 500, 1000, 750, 5000, 100];
 const META = 1000;
 
 const vendasQueBateramMeta = vendas.filter((venda) => venda >= META);
-
 console.log(vendasQueBateramMeta);
 
 /* Se fosse fazer sem filter... */
@@ -23,3 +22,14 @@ console.log(vendasQueBateramMeta);
 //   }
 // }
 // console.log(bateramMeta);
+
+separador();
+
+// Exemplo 2: filtrar serviços pendentes
+const servicos = [
+  { codigo: 1, tipo: "Limpeza", status: "Concluído" },
+  { codigo: 2, tipo: "Manutenção", status: "Pendente" },
+  { codigo: 3, tipo: "Reparo", status: "Pendente" },
+  { codigo: 4, tipo: "Consultoria", status: "Concluído" },
+  { codigo: 5, tipo: "Instalação", status: "Concluído" },
+];
