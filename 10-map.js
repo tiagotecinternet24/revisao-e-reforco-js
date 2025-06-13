@@ -79,9 +79,17 @@ Gere uma nova de lista de cursos contendo apenas os titulos e as categorias. */
 // });
 
 // Versão 2: com retorno implícito (atenção: use parênteses no retorno do objeto)
-const cursosComTituloCategoria = cursos.map((curso) => ({
-  titulo: curso.titulo,
-  categoria: curso.categoria,
+// const cursosComTituloCategoria = cursos.map((curso) => ({
+//   titulo: curso.titulo,
+//   categoria: curso.categoria,
+// }));
+
+// Versão 3: usando desestruturação de parâmetros
+/* Note que podemos até mesmo deixar apenas o nome dos parâmetros como
+propriedades do objeto retornado. Ou seja, em vez de usar titulo: titulo, podemos deixar somente titulo. Em vez de usar categoria: categoria, basta categoria. */
+const cursosComTituloCategoria = cursos.map(({ titulo, categoria }) => ({
+  titulo,
+  categoria,
 }));
 
 console.log(cursosComTituloCategoria);
