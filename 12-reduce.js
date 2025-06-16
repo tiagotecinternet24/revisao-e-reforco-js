@@ -17,10 +17,21 @@ console.log(total);
 separador();
 
 // Exercício 1: realize a soma dos preços de todos os cursos
-// Mostre no log.
+const somaDosPrecos = cursos.reduce(
+  (acumulador, { preco }) => acumulador + preco,
+  0
+);
+console.log("Soma de todos os preços: " + somaDosPrecos);
 
 // Exercício 2: calcule a média dos preços de todos os cursos
-// Mostre no log.
+// const mediaDosPrecos = somaDosPrecos / cursos.length;
+const mediaDosPrecos = cursos.reduce((acumulador, { preco }) => {
+  return acumulador + preco / cursos.length;
+}, 0);
+console.log("Média dos preços: " + mediaDosPrecos.toFixed(2));
 
 // Exercício 3: calcule o preço total dos cursos de Front-End
-// Mostre no log.
+const somaDosPrecosFront = cursos
+  .filter(({ categoria }) => categoria === "Front-End")
+  .reduce((acumulador, { preco }) => acumulador + preco, 0);
+console.log("Soma dos preços dos cursos de Front: " + somaDosPrecosFront);
