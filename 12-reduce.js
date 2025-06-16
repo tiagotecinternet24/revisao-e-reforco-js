@@ -15,3 +15,12 @@ const total = valores.reduce((acumulador, valor) => acumulador + valor, 0);
 console.log(total);
 
 separador();
+
+// Exercício 1: realize a soma dos preços de todos os cursos
+// Mostre no log.
+
+// Exercício 2: calcule a média dos preços de todos os cursos
+// Mostre no log.
+
+// Exercício 3: calcule o preço total dos cursos de Front-End
+// Mostre no log.
